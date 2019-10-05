@@ -79,14 +79,9 @@ public class ItemHistory extends HttpServlet {
 			return;
 		}
 		String userId = session.getAttribute("user_id").toString(); 
-		
-//		String userId = request.getParameter("user_id");
-//		String userId = "1111";
-		
 		DBConnection connection = DBConnectionFactory.getConnection();
 		try {
 			JSONObject input = RpcHelper.readJSONObject(request);
-//			String userId = input.getString("user_id");
 			JSONArray array = input.getJSONArray("favorite");
 			List<String> itemIds = new ArrayList<>();
 			for (int i = 0; i < array.length(); ++i) {
@@ -120,7 +115,6 @@ public class ItemHistory extends HttpServlet {
 		DBConnection connection = DBConnectionFactory.getConnection();
 		try {
 			JSONObject input = RpcHelper.readJSONObject(request);
-//			String userId = input.getString("user_id");
 			JSONArray array = input.getJSONArray("favorite");
 			List<String> itemIds = new ArrayList<>();
 			for (int i = 0; i < array.length(); ++i) {

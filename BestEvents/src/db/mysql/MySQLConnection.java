@@ -179,13 +179,6 @@ public class MySQLConnection implements DBConnection {
 		return categories;
 	}
 	
-
-	/*
-	 * Previously we call TicketMasterAPI.search from our SearchItem servlet directly, 
-	 * but actually our recommendation code also needs to call the same search function, so we make a
-	 * designated function here to do the search call. The code is simply copied
-	 * from what we’ve already had in SearchItem.java.
-	 */
 	@Override
 	public List<Item> searchItems(double lat, double lon, String term) {
         TicketMasterAPI ticketMasterAPI = new TicketMasterAPI();

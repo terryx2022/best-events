@@ -81,7 +81,7 @@ public class MySQLTableCreation {
 					+ ")";
 			statement.executeUpdate(sql);
 			
-			// Step 4: insert fake user 1111/3229c1097c00d497a0fd282d586be050
+			// Step 4: insert fake user username, password(hash), first name, lastname1111/3229c1097c00d497a0fd282d586be050
 			sql = "INSERT INTO users VALUES('1111', '3229c1097c00d497a0fd282d586be050', 'Terry', 'Xin')";
 			statement.executeUpdate(sql);
 			

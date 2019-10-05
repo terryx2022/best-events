@@ -9,7 +9,7 @@ import db.mongodb.MongoDBConnection;
  *
  */
 public class DBConnectionFactory {
-	// This should change based on the pipeline.
+	// This should change based on the database.
 	private static final String DEFAULT_DB = "mysql";
 	
 	public static DBConnection getConnection(String db) {

@@ -27,7 +27,7 @@ public class GeoRecommendation {
 			Set<String> favoritedItemIds = connection.getFavoriteItemIds(userId);
 
 			// Step 2, get all categories,  sort by count
-			// {"sports": 5, "music": 3, "art": 2}
+			// eg, {"sports": 5, "music": 3, "art": 2}
 			Map<String, Integer> allCategories = new HashMap<>();
 			for (String itemId : favoritedItemIds) {
 				Set<String> categories = connection.getCategories(itemId);
