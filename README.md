@@ -32,3 +32,6 @@ Start MAMP and go to phpmyadmin (under tool), create a new database. Update [con
 ### Run
 Start the sever to [test locally](http://localhost:8080/BestEvents/)
 
+### For You Information
+I implemented a [database connection interface](/BestEvents/src/db/DBConnection.java) while developing the project. It's very convenient if you want to use other databases other than MySQL. Remember to modify the [database factory](/BestEvents/src/db/DBConnectionFactory.java) accordingly.
+
