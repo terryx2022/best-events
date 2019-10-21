@@ -1,8 +1,6 @@
 *This project is developed in Eclipse and supported by TicketMaster.*
-# BestEvents
+# BestEvents [Go to website](http://3.132.8.179/BestEvents/)
 BestEvents is an interactive website to provide services of event search and personalized recommendations.
-
-[Go to website](http://3.132.8.179/BestEvents/)
 
 
 ## Get Started
